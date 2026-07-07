@@ -34,6 +34,8 @@ brew services start colima
 - `rust-analyzer` — language server (autocomplete, go-to-definition, inline errors)
 - `CodeLLDB` — native debugger
 - `Even Better TOML` — syntax support for `Cargo.toml`
+- `LiveShare` — for session sharing
+- `claude` — AI agent
 
 ## Common Commands
 
@@ -43,3 +45,15 @@ cargo test        # run tests
 cargo clippy      # lint
 cargo fmt         # format
 ```
+
+## Live-Sharing Claude
+
+Sharing terminal sessions is possible, but needs the following steps:
+1. Candidate must open the Terminal view, then press Enter in it,
+2. Candidate must request Terminal access by pressing the relevant button in the bottom-right corner of the screen,
+3. Interviewer must accept the terminal request in read/write mode.
+
+Claude can be quite finicky in the Live Share, the following steps are recommended to provide an okay experience:
+1. Start `claude` after the candidate has access to the terminal.
+2. Clear the screen with `clear` before starting `claude`.
+3. Resize the VSCode window until it looks correct on the candidate's screen (usually the width needs to be decreased). The candidate might also need to resize their window, it's best to ask the candidate to share screen while you figure this out.
