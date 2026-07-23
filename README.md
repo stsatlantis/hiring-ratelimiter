@@ -2,7 +2,7 @@
 
 ## Task
 
-Implement a rate limiter library in Rust.
+Implement a rate limiter library.
 
 A rate limiter controls how frequently an operation can be performed. Your implementation should expose a clean API that allows callers to check whether a given action is permitted under the configured rate limit, and to record that the action was taken.
 
@@ -13,8 +13,33 @@ A rate limiter controls how frequently an operation can be performed. Your imple
 
 ## Deliverables
 
-- A Rust library (or binary with a library interface) in this repository.
-- A brief explanation in this README of your chosen algorithm and any design decisions.
+- A library (or binary with a library interface) in this repository, under the language sub-project you are working in.
+- A brief explanation in the sub-project README (or this README) of your chosen algorithm and any design decisions.
+
+## Sub-projects
+
+### Rust
+
+Located in [`rust/`](rust/). Uses the Rust standard library only.
+
+```sh
+cd rust
+cargo build
+cargo test
+cargo clippy
+cargo fmt
+```
+
+### Scala
+
+Located in [`scala/`](scala/). Uses the Scala / Java standard library only.
+
+```sh
+cd scala
+sbt compile
+sbt test
+sbt run
+```
 
 ## Getting Started
 
