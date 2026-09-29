@@ -41,6 +41,17 @@ sbt test
 sbt run
 ```
 
+### Java
+
+Located in [`java/`](java/). Uses the Java standard library only (JUnit 5 is provided for tests).
+
+```sh
+cd java
+mvn compile
+mvn test
+mvn compile exec:exec
+```
+
 ## Getting Started
 
 ```sh

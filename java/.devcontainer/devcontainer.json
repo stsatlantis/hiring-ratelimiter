@@ -1,0 +1,26 @@
+{
+  "name": "Java",
+  "image": "mcr.microsoft.com/devcontainers/java:25",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "none",
+      "installMaven": true
+    },
+    "ghcr.io/devcontainers/features/node:2.1.0": {
+      "version": "lts"
+    },
+    "ghcr.io/anthropics/devcontainer-features/claude-code:1.0": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "ms-vsliveshare.vsliveshare"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "java.configuration.updateBuildConfiguration": "automatic"
+      }
+    }
+  }
+}

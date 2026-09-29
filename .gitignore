@@ -8,5 +8,11 @@
 /scala/.bsp
 /scala/.metals
 
+# Java / Maven
+/java/target
+
 # Claude Code
 .claude/settings.local.json
+
+# IntelliJ
+.idea/
